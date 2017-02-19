@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.5.2</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.5.2/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-2.5.2/jasmine.css">
+
+  <script src="lib/jasmine-2.5.2/jasmine.js"></script>
+  <script src="lib/jasmine-2.5.2/jasmine-html.js"></script>
+  <script src="lib/jasmine-2.5.2/boot.js"></script>
+
+  <script src = "../controller.js"></script> 
+  <script src = "../controller_test.js"></script> 
+
+</head>
+
+<body>
+<div style="display: none">
+		<div id="dialogMsg" title="Progress bars Demo">
+		<div id="container" class="container">
+			 <progress id="progress1" value="10" max="230">0%</progress>
+			<progress id="progress2" value="0" max="230">0%</progress>  
+			<progress id="progress3" value="0" max="230">0%</progress>
+			<div> 
+			<select
+				id="selectBar">
+				<option id="option_progress1">progress1</option>
+				<option id="option_progress2">progress2</option>
+				<option id="option_progress3">progress3</option>
+			</select>
+			</div>
+			<button id="decButton25" type="button" onclick="updateProgress(this.id, -25)">-25</button>
+			<button id="decButton10" type="button" onclick="updateProgress(this.id,-10)">-10</button>
+			<button id="incButton10" type="button" onclick="updateProgress(this.id,10)">10</button>
+			<button id="incButton25" type="button" onclick="updateProgress(this.id,25)">25</button>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
