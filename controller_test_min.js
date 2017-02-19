@@ -1,0 +1,1 @@
+describe("Progress Bar",function(){it("should Return selected progressbar i.e. progress1",function(){expect(getSelectedText("selectBar")).toEqual("progress1")}),it("should Return selected progressbar i.e. progress1",function(){changeProgressBar(20),expect(document.getElementById("progress1").value).toEqual(30)})});
